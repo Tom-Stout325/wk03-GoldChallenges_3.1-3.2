@@ -10,3 +10,22 @@
 */
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
+
+
+        // const where = document.getElementById("store").value;
+        // const numb = document.getElementById("quantity").value;
+        // const stuff = document.getElementById("product").value;   
+
+    function setVar() {
+             var where = document.getElementById("store").value;
+             var numb = document.getElementById("quantity").value;
+             var stuff = document.getElementById("product").value;
+                
+                console.log("I shopped at " + where, "for " + numb, stuff);
+
+                document.write("I shopped at " + where, " for " + numb," ", stuff);
+                //setVar()
+                
+                
+        }
+            
