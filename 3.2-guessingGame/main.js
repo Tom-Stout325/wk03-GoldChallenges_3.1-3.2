@@ -21,7 +21,6 @@
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
 
-
 let randomNum = Math.floor(Math.random() * 10) + 1;
 let turns = 5;
 

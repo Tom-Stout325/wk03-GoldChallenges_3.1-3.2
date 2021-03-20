@@ -13,6 +13,7 @@ html, body {
     border-radius: 45px;
     display: block;
 }
+
 h1 {
     font-family: 'Syne Mono', monospace;
     font-size: 4vw;
@@ -21,11 +22,11 @@ h1 {
 }
 
 #button {
-        width: 30%;
-        font-family: 'Syne Mono', monospace;
-        font-size: 30px;
-        color: black;
-        border: 2px solid black;
-        border-radius: 10px;
-        margin:auto;
+    width: 30%;
+    font-family: 'Syne Mono', monospace;
+    font-size: 30px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: auto;
 }
