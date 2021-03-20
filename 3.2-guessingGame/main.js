@@ -22,20 +22,27 @@
 
 
 
-function guessNumber() {
-      let randomNum = Math.floor(Math.random() * 10) + 1;
-            console.log(randomNum);
-      var guess;
-        guess = prompt("Guess a number between 0 and 10");
-            console.log("Your guess is: " + guess);
+let randomNum = Math.floor(Math.random() * 10) + 1;
+let turns = 5;
 
-        if (guess < randomNum) {
-               window.alert("You've guessed too low.  Try again.");
-        }  else if (guess > randomNum) {
-                window.alert("You've guessed too high.  Try again.");
-        }  else if (guess == randomNum) {
-                window.alert("It looks like you've won. Shall we play Tic Tac Toe?");
-        }   else {
-                window.alert("ERROR! Launch sequence initiated.");
-        }
+ function guessNumber() {     
+    while (turns > 0) {
+        guess = prompt("Guess a number between 0 and 10");
+        if (guess == randomNum) {
+            turns = 0;
+            alert("It looks like you've won. Shall we play Tic Tac Toe? " + randomNum + ".");
+        } else if (guess < randomNum) {
+            turns--;
+            alert("You've guessed too low. Try again. Attempts Remaining: " + turns);
+        } else if (guess > randomNum) {
+            turns--;
+             alert("You've guessed too high. Try again. Attempts Remaining: " + turns);
+        }  else {
+            alert("ERROR! Launch sequence initiated.  Try");
+     }
 }
+
+    if (turns==0)
+    alert ("You have lost. Launch sequence initiated.");
+     }
+    
